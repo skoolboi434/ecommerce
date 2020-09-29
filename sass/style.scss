@@ -1,0 +1,136 @@
+/* Sass Template*/
+
+/* Variables */
+
+$heading-font: "Roboto", sans-serif;
+$para-font: "Open Sans", sans-serif;
+
+$primary: #003859;
+$secondary: #00a5c4;
+$third: #fff;
+$fourth: #ffd289;
+
+/* Global Styles*/
+button,
+button:focus {
+  outline: none !important;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.color-primary {
+  color: $primary;
+}
+
+.color-primary-bg {
+  background: $primary;
+}
+
+.color-second {
+  color: $secondary;
+}
+
+.color-second-bg {
+  background: $secondary;
+}
+
+.color-fourth {
+  color: $fourth;
+}
+
+.color-fourth-bg {
+  background: $fourth;
+}
+
+/* Main Styles*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+}
+
+p {
+  font-family: $para-font;
+}
+
+a {
+  text-decoration: none;
+  font-family: $para-font;
+}
+
+/* Top sale section*/
+
+#top-sale {
+  .owl-carousel .item .product a {
+    overflow: hidden;
+  }
+
+  .owl-carousel .item .product img {
+    transition: transform 0.5s ease;
+  }
+
+  .owl-carousel .item .product img:hover {
+    transform: scale(1.1);
+  }
+
+  .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 30%;
+    outline: none;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+    font-size: 35px;
+    color: $primary;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev span,
+  .owl-carousel .owl-nav button.owl-next span {
+    font-size: 35px;
+    color: $primary;
+    padding: 0 1rem;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev span {
+    margin-left: -4rem;
+  }
+
+  .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+    font-size: 35px;
+    color: $primary;
+  }
+
+  .owl-carousel .owl-nav button.owl-next span {
+    margin-right: -4rem;
+  }
+}
+
+/* Special Price Section*/
+
+#special-price {
+  .grid .grid-item {
+    margin-right: 1.2rem;
+  }
+}
+
+/* Footer Section*/
